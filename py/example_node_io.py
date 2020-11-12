@@ -38,7 +38,7 @@ def main():
 
             f = sawtooth(i)
 
-            mot = [0,0,f] # esc, servopos, light
+            mot = [0,0,0,0,f,f,f] # esc, servopos, light
             for b in range(cord.number_of_motors):
                 cord.set_raw_data_send(b, mot)
 
